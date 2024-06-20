@@ -10,3 +10,5 @@ Route::get('/', function () {
 Route::get('/anime', function () {
     return view('anime');
 })->name('anime');
+
+Route::get('/anime', [ProductController::class, 'index'])->name('anime');
